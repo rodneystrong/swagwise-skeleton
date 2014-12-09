@@ -62,7 +62,7 @@ var mongodbUri = 'mongodb://swagwise:geekwise@ds045679.mongolab.com:45679/geekwi
 var mongooseUri = uriUtil.formatMongoose(mongodbUri);
 var conn = mongoose.connection;
 
-mongoose.connect(mongooseUri, options);
+mongoose.connect('mongodb://localhost:27017/swagwise', options);
 conn.on('error', console.error.bind(console, 'connection error:'));
 conn.once('open', function() {
     // Wait for the database connection to establish, then start the app.

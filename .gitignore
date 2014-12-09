@@ -53,3 +53,5 @@ tomcat
 .sass-cache
 .vagrant/
 /.project
+
+node_modules
